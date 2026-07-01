@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hsien-Ju Ko | Academic Homepage</title>
+  <meta
+    name="description"
+    content="Academic homepage of Hsien-Ju Ko, Associate Professor at Asia University."
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 頂部固定導覽列 -->
+  <header class="site-header" id="top">
+    <nav class="navbar container">
+      <a href="#top" class="brand">Hsien-Ju Ko</a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="navMenu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 首頁橫幅輪播 -->
+    <section class="hero">
+      <div class="hero-slider" id="heroSlider">
+        <div class="slide active" style="background-image: url('DSC_8138.png');"></div>
+        <div class="slide" style="background-image: url('DSC_8112.png');"></div>
+        <div class="slide" style="background-image: url('DSC_8081.JPG');"></div>
+        <div class="slide" style="background-image: url('DSC_8113.png');"></div>
+        <div class="slide" style="background-image: url('DSC_8107.png');"></div>
+        <div class="slide" style="background-image: url('DSC_8121.png');"></div>
+
+        <div class="hero-overlay"></div>
+
+        <!-- 標題文字不壓在正中央，改放左下 -->
+        <div class="hero-content container">
+          <p class="eyebrow">Academic Homepage</p>
+          <h1>Hsien-Ju Ko</h1>
+          <p class="hero-subtitle">
+            Associate Professor<br />
+            Department of Photonics and Communication Engineering, Asia University
+          </p>
+        </div>
+
+        <button class="slider-btn prev" id="prevBtn" aria-label="Previous slide">&#10094;</button>
+        <button class="slider-btn next" id="nextBtn" aria-label="Next slide">&#10095;</button>
+
+        <div class="slider-dots" id="sliderDots" aria-label="Slider indicators">
+          <button class="dot active" data-slide="0" aria-label="Go to slide 1"></button>
+          <button class="dot" data-slide="1" aria-label="Go to slide 2"></button>
+          <button class="dot" data-slide="2" aria-label="Go to slide 3"></button>
+          <button class="dot" data-slide="3" aria-label="Go to slide 4"></button>
+          <button class="dot" data-slide="4" aria-label="Go to slide 5"></button>
+          <button class="dot" data-slide="5" aria-label="Go to slide 6"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section fade-in" id="about">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">About</p>
+          <h2>Profile</h2>
+        </div>
+
+        <div class="card two-column">
+          <div>
+            <h3 class="name-title">Hsien-Ju Ko</h3>
+            <p class="muted">
+              Associate Professor, Department of Photonics and Communication Engineering,
+              Asia University, Taichung, Taiwan
+            </p>
+          </div>
+
+          <div class="contact-mini">
+            <div class="mini-item">
+              <span class="mini-label">Email</span>
+              <a href="mailto:hjko@asia.edu.tw">hjko@asia.edu.tw</a>
+            </div>
+            <div class="mini-item">
+              <span class="mini-label">Office</span>
+              <span>Asia University, Taichung, Taiwan</span>
+            </div>
+            <div class="mini-item">
+              <span class="mini-label">Cell</span>
+              <span>Hidden for privacy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <p>
+            Hsien-Ju Ko received the B.S. degree in Marine Engineering from National Taiwan Ocean
+            University in 1998, and the M.S. and Ph.D. degrees in Electrical Engineering from
+            Tatung University in 2000 and 2004, respectively. He joined Asia University in 2006
+            and is currently an Associate Professor in the Department of Photonics and Communication
+            Engineering.
+          </p>
+          <p>
+            His academic and research work spans automatic control, signal processing,
+            artificial intelligence, and computer networks. He has also served as a Technical
+            Program Committee Member of the IEEE International Conference on Cloud Computing. :contentReference[oaicite:1]{index=1}
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section section-alt fade-in" id="education">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Education</p>
+          <h2>Academic Background</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item card">
+            <div class="timeline-year">2004</div>
+            <div class="timeline-content">
+              <h3>Ph.D. in Electrical Engineering</h3>
+              <p>Tatung University, Taipei, Taiwan</p>
+              <p class="muted">
+                Concentrations: Automatic Control, Digital Control Systems, Artificial Neural Networks
+              </p>
+              <p class="muted">
+                Dissertation: <em>Analyses and Design of Digital Control Systems under Finite Word Length Effects</em>
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item card">
+            <div class="timeline-year">2000</div>
+            <div class="timeline-content">
+              <h3>M.S. in Electrical Engineering</h3>
+              <p>Tatung University, Taipei, Taiwan</p>
+              <p class="muted">
+                Thesis: <em>Performance Analysis of Closed-Loop Stability Bounds with Floating Point Computation</em>
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item card">
+            <div class="timeline-year">1998</div>
+            <div class="timeline-content">
+              <h3>B.S. in Marine Engineering</h3>
+              <p>National Taiwan Ocean University, Keelung, Taiwan</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research -->
+    <section class="section fade-in" id="research">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Research</p>
+          <h2>Research Interests</h2>
+        </div>
+
+        <div class="chips">
+          <span class="chip">Automatic Control</span>
+          <span class="chip">Signal Processing</span>
+          <span class="chip">Artificial Intelligence</span>
+          <span class="chip">Computer Networks</span>
+          <span class="chip">Digital Control Systems</span>
+          <span class="chip">Finite Precision Analysis</span>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card">
+            <h3>Control and Stability</h3>
+            <p>
+              Research on digital control systems, finite word length effects, and stability
+              analysis for controller realization and implementation.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Signal Processing</h3>
+            <p>
+              Focus on digital filtering, ECG signal processing, adaptive filtering, and
+              computationally efficient system synthesis.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>AI and Networks</h3>
+            <p>
+              Interests also extend to artificial intelligence, recurrent neural network
+              implementation, and computer network related applications.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section class="section section-alt fade-in" id="publications">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Publications</p>
+          <h2>Selected Publications</h2>
+        </div>
+
+        <div class="card">
+          <h3>Journal Articles</h3>
+          <ol class="pub-list">
+            <li>
+              H.-J. Ko, W.-S. Yu, Y.-C. Wang, and J. J. P. Tsai,
+              “Rot-IIR-SSM: Provably Stable and Pole-Interpretable IIR State-Space Model for
+              Streaming ECG Myocardial Infarction Detection,”
+              <em>IEEE Transactions on Biomedical Engineering</em>, 2026.
+            </li>
+            <li>
+              H. J. Ko, H. C. Yang, J. J. P. Tsai, and W. S. Yu,
+              “Performance evaluation of infinite impulse response filter synthesis using
+              parallel-Direct-Ladder form under finite word-length effects,”
+              <em>Signal Processing</em>, vol. 210, 2023.
+            </li>
+            <li>
+              Hsien-Ju Ko and Jeffrey J. P. Tsai,
+              “Robust and Computationally Efficient Digital IIR Filter Synthesis and Stability
+              Analysis under Finite Precision Implementations,”
+              <em>IEEE Transactions on Signal Processing</em>, vol. 68, pp. 1807–1822, 2020.
+            </li>
+            <li>
+              Hsien-Ju Ko and Wen-Shyong Yu,
+              “Guaranteed Robust Stability of the Closed-Loop Systems for Digital Controller
+              Implementations via Orthogonal Hermitian Transform,”
+              <em>IEEE Transactions on Systems, Man and Cybernetics Part B</em>,
+              vol. 34, pp. 1923–1932, 2004.
+            </li>
+            <li>
+              Wen-Shyong Yu and Hsien-Ju Ko,
+              “Improved Eigenvalue Sensitivity for Finite-Precision Digital Controller
+              Realizations via Orthogonal Hermitian Transform,”
+              <em>IEE Proceedings - Control Theory and Applications</em>,
+              vol. 150, pp. 365–375, 2003.
+            </li>
+          </ol>
+        </div>
+
+        <div class="card">
+          <h3>Conference Papers</h3>
+          <ol class="pub-list">
+            <li>
+              Hsien-Ju Ko, Hao-Cheng Yang, Yuan-Bin Wang, and Han He,
+              “The Fixed-Point Implementations for Recurrent Neural Networks,”
+              <em>International Conference on System Science and Engineering</em>, 2020.
+            </li>
+            <li>
+              Hsien-Ju Ko,
+              “An improved approach to stability analysis of fixed-point digital control systems
+              under finite word length effects,”
+              <em>SICE Annual Conference</em>, 2010.
+            </li>
+            <li>
+              Hsien-Ju Ko and Wen-Shyong Yu,
+              “Sensitivity minimization for controller implementations: Fixed-point approach,”
+              <em>American Control Conference</em>, 2004.
+            </li>
+          </ol>
+          <p class="muted small-note">
+            Publications are selected and condensed for web presentation from the uploaded CV. :contentReference[oaicite:2]{index=2}
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section fade-in" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Projects</p>
+          <h2>Selected Grants and Projects</h2>
+        </div>
+
+        <div class="grid grid-2">
+          <article class="card">
+            <div class="project-meta">2024–2025</div>
+            <h3>
+              A Deep Neural Network Architecture Based on Highly Robust and Parallel Architecture
+              State Space Model
+            </h3>
+            <p>
+              Principal Investigator, National Science and Technology Council, Taiwan.
+            </p>
+            <p class="muted">Approved amount: NT$800,000</p>
+          </article>
+
+          <article class="card">
+            <div class="project-meta">2023–2024</div>
+            <h3>Design and Implementation of a Novel Parallel Digital Filter Structure</h3>
+            <p>
+              Principal Investigator, National Science and Technology Council, Taiwan.
+            </p>
+            <p class="muted">Approved amount: NT$450,000</p>
+          </article>
+
+          <article class="card">
+            <div class="project-meta">2022–2023</div>
+            <h3>Improved Decision Feedback Equalizer Design</h3>
+            <p>
+              Principal Investigator, National Science and Technology Council, Taiwan.
+            </p>
+            <p class="muted">Approved amount: NT$497,000</p>
+          </article>
+
+          <article class="card">
+            <div class="project-meta">2021–2022</div>
+            <h3>
+              Design and Implementation of Improved Adaptive IIR Filter, Two-Dimensional Filter,
+              and Recurrent Neural Network System
+            </h3>
+            <p>
+              Principal Investigator, National Science and Technology Council, Taiwan.
+            </p>
+            <p class="muted">Approved amount: NT$514,000</p>
+          </article>
+
+          <article class="card">
+            <div class="project-meta">2025–2026</div>
+            <h3>
+              Generative AI, Situated Learning, and Computational Thinking for Windows Programming Education
+            </h3>
+            <p>
+              Principal Investigator, Ministry of Education Teaching Practice Research Program.
+            </p>
+            <p class="muted">Approved amount: NT$220,000</p>
+          </article>
+
+          <article class="card">
+            <div class="project-meta">Earlier Projects</div>
+            <h3>Telemedicine, Power Quality, Smart Lighting, and IPv6 Applications</h3>
+            <p>
+              Research experience includes interdisciplinary grants in physiological signal
+              processing, power quality monitoring, smart lighting, RFID-based campus security,
+              and U-healthcare related systems.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards -->
+    <section class="section section-alt fade-in" id="awards">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Awards</p>
+          <h2>Awards and Honors</h2>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card center-card">
+            <h3>2010</h3>
+            <p>Distinguished Teaching Award</p>
+            <p class="muted">Asia University, Taiwan</p>
+          </article>
+
+          <article class="card center-card">
+            <h3>2012</h3>
+            <p>Distinguished Teaching Award</p>
+            <p class="muted">Asia University, Taiwan</p>
+          </article>
+
+          <article class="card center-card">
+            <h3>2016</h3>
+            <p>Distinguished Teaching Award</p>
+            <p class="muted">Asia University, Taiwan</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section fade-in" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Skills</p>
+          <h2>Relevant Skills</h2>
+        </div>
+
+        <div class="grid grid-2">
+          <article class="card">
+            <h3>Programming</h3>
+            <ul class="clean-list">
+              <li>C</li>
+              <li>Java</li>
+              <li>MATLAB</li>
+              <li>Assembly Language</li>
+              <li>VHDL</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Professional Certifications</h3>
+            <ul class="clean-list">
+              <li>Cisco Certified Academy Instructor (CCAI)</li>
+              <li>Cisco Certified Network Associate (CCNA)</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section-alt fade-in" id="contact">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Contact</p>
+          <h2>Get in Touch</h2>
+        </div>
+
+        <div class="card contact-card">
+          <div>
+            <h3>Academic Contact</h3>
+            <p>
+              For academic collaboration, teaching, and research discussion, please contact by email.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <div>
+              <span class="mini-label">Name</span>
+              <p>Hsien-Ju Ko</p>
+            </div>
+            <div>
+              <span class="mini-label">Affiliation</span>
+              <p>Department of Photonics and Communication Engineering, Asia University</p>
+            </div>
+            <div>
+              <span class="mini-label">Email</span>
+              <p><a href="mailto:hjko@asia.edu.tw">hjko@asia.edu.tw</a></p>
+            </div>
+            <div>
+              <span class="mini-label">Location</span>
+              <p>Taichung, Taiwan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2026 Hsien-Ju Ko. All rights reserved.</p>
+      <a href="#top" class="back-top">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
