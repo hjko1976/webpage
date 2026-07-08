@@ -14,30 +14,37 @@
   <!-- 頂部固定導覽列 -->
   <header class="site-header" id="top">
     <nav class="navbar container">
-      <a href="#top" class="brand">Hsien-Ju Ko</a>
+      <a href="#top" class="brand" data-zh="柯賢儒">Hsien-Ju Ko</a>
 
-      <button
-        class="menu-toggle"
-        id="menuToggle"
-        aria-label="Open navigation menu"
-        aria-expanded="false"
-        aria-controls="navMenu"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <div class="nav-right">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#about" data-zh="關於">About</a></li>
+          <li><a href="#education" data-zh="學歷">Education</a></li>
+          <li><a href="#research" data-zh="研究">Research</a></li>
+          <li><a href="#publications" data-zh="著作">Publications</a></li>
+          <li><a href="#projects" data-zh="研究計畫">Projects</a></li>
+          <li><a href="#awards" data-zh="獲獎">Awards</a></li>
+          <li><a href="#skills" data-zh="專長">Skills</a></li>
+          <li><a href="#contact" data-zh="聯絡">Contact</a></li>
+        </ul>
 
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#awards">Awards</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+        <div class="lang-switch" role="group" aria-label="Select language / 選擇語言">
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" class="lang-btn" data-lang="zh" aria-pressed="false">中文</button>
+        </div>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="navMenu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </nav>
   </header>
 
@@ -56,11 +63,11 @@
 
         <!-- 標題文字不壓在正中央，改放左下 -->
         <div class="hero-content container">
-          <p class="eyebrow">Academic Homepage</p>
-          <h1>Hsien-Ju Ko</h1>
-          <p class="hero-subtitle">
+          <p class="eyebrow" data-zh="學術個人網頁">Academic Homepage</p>
+          <h1 data-zh="柯賢儒">Hsien-Ju Ko</h1>
+          <p class="hero-subtitle" data-zh="副教授&lt;br /&gt;亞洲大學 資訊工程學系 ／ 人工智慧博士學位學程">
             Associate Professor<br />
-            Department of Photonics and Communication Engineering, Asia University
+            Department of Computer Science and Information Engineering / Artificial Intelligence Ph.D. Program, Asia University
           </p>
         </div>
 
@@ -82,14 +89,14 @@
     <section class="section fade-in" id="about">
       <div class="container">
         <div class="section-heading">
-          <p class="section-kicker">About</p>
-          <h2>Profile</h2>
+          <p class="section-kicker" data-zh="關於">About</p>
+          <h2 data-zh="個人簡介">Profile</h2>
         </div>
 
         <div class="card two-column">
           <div>
-            <h3 class="name-title">Hsien-Ju Ko</h3>
-            <p class="muted">
+            <h3 class="name-title" data-zh="柯賢儒">Hsien-Ju Ko</h3>
+            <p class="muted" data-zh="亞洲大學 光電與通訊工程學系 副教授，臺灣臺中">
               Associate Professor, Department of Photonics and Communication Engineering,
               Asia University, Taichung, Taiwan
             </p>
@@ -97,32 +104,32 @@
 
           <div class="contact-mini">
             <div class="mini-item">
-              <span class="mini-label">Email</span>
+              <span class="mini-label" data-zh="電子郵件">Email</span>
               <a href="mailto:hjko@asia.edu.tw">hjko@asia.edu.tw</a>
             </div>
             <div class="mini-item">
-              <span class="mini-label">Office</span>
-              <span>Asia University, Taichung, Taiwan</span>
+              <span class="mini-label" data-zh="辦公室">Office</span>
+              <span data-zh="亞洲大學，臺灣臺中">Asia University, Taichung, Taiwan</span>
             </div>
             <div class="mini-item">
-              <span class="mini-label">Cell</span>
-              <span>Hidden for privacy</span>
+              <span class="mini-label" data-zh="手機">Cell</span>
+              <span data-zh="因隱私考量未公開">Hidden for privacy</span>
             </div>
           </div>
         </div>
 
         <div class="card">
-          <p>
+          <p data-zh="柯賢儒於 1998 年取得國立臺灣海洋大學輪機工程學士學位，並分別於 2000 年與 2004 年取得大同大學電機工程碩士與博士學位。他於 2006 年加入亞洲大學，目前擔任光電與通訊工程學系副教授。">
             Hsien-Ju Ko received the B.S. degree in Marine Engineering from National Taiwan Ocean
             University in 1998, and the M.S. and Ph.D. degrees in Electrical Engineering from
             Tatung University in 2000 and 2004, respectively. He joined Asia University in 2006
             and is currently an Associate Professor in the Department of Photonics and Communication
             Engineering.
           </p>
-          <p>
+          <p data-zh="他的教學與研究涵蓋自動控制、訊號處理、人工智慧與電腦網路，並曾擔任 IEEE 國際雲端運算研討會（IEEE International Conference on Cloud Computing）技術委員會委員。">
             His academic and research work spans automatic control, signal processing,
             artificial intelligence, and computer networks. He has also served as a Technical
-            Program Committee Member of the IEEE International Conference on Cloud Computing. :contentReference[oaicite:1]{index=1}
+            Program Committee Member of the IEEE International Conference on Cloud Computing.
           </p>
         </div>
       </div>
@@ -132,20 +139,20 @@
     <section class="section section-alt fade-in" id="education">
       <div class="container">
         <div class="section-heading">
-          <p class="section-kicker">Education</p>
-          <h2>Academic Background</h2>
+          <p class="section-kicker" data-zh="學歷">Education</p>
+          <h2 data-zh="學術背景">Academic Background</h2>
         </div>
 
         <div class="timeline">
           <article class="timeline-item card">
             <div class="timeline-year">2004</div>
             <div class="timeline-content">
-              <h3>Ph.D. in Electrical Engineering</h3>
-              <p>Tatung University, Taipei, Taiwan</p>
-              <p class="muted">
+              <h3 data-zh="電機工程博士">Ph.D. in Electrical Engineering</h3>
+              <p data-zh="大同大學，臺灣臺北">Tatung University, Taipei, Taiwan</p>
+              <p class="muted" data-zh="研究方向：自動控制、數位控制系統、人工神經網路">
                 Concentrations: Automatic Control, Digital Control Systems, Artificial Neural Networks
               </p>
-              <p class="muted">
+              <p class="muted" data-zh="博士論文：&lt;em&gt;Analyses and Design of Digital Control Systems under Finite Word Length Effects&lt;/em&gt;">
                 Dissertation: <em>Analyses and Design of Digital Control Systems under Finite Word Length Effects</em>
               </p>
             </div>
@@ -154,9 +161,9 @@
           <article class="timeline-item card">
             <div class="timeline-year">2000</div>
             <div class="timeline-content">
-              <h3>M.S. in Electrical Engineering</h3>
-              <p>Tatung University, Taipei, Taiwan</p>
-              <p class="muted">
+              <h3 data-zh="電機工程碩士">M.S. in Electrical Engineering</h3>
+              <p data-zh="大同大學，臺灣臺北">Tatung University, Taipei, Taiwan</p>
+              <p class="muted" data-zh="碩士論文：&lt;em&gt;Performance Analysis of Closed-Loop Stability Bounds with Floating Point Computation&lt;/em&gt;">
                 Thesis: <em>Performance Analysis of Closed-Loop Stability Bounds with Floating Point Computation</em>
               </p>
             </div>
@@ -165,8 +172,8 @@
           <article class="timeline-item card">
             <div class="timeline-year">1998</div>
             <div class="timeline-content">
-              <h3>B.S. in Marine Engineering</h3>
-              <p>National Taiwan Ocean University, Keelung, Taiwan</p>
+              <h3 data-zh="輪機工程學士">B.S. in Marine Engineering</h3>
+              <p data-zh="國立臺灣海洋大學，臺灣基隆">National Taiwan Ocean University, Keelung, Taiwan</p>
             </div>
           </article>
         </div>
@@ -177,39 +184,39 @@
     <section class="section fade-in" id="research">
       <div class="container">
         <div class="section-heading">
-          <p class="section-kicker">Research</p>
-          <h2>Research Interests</h2>
+          <p class="section-kicker" data-zh="研究">Research</p>
+          <h2 data-zh="研究領域">Research Interests</h2>
         </div>
 
         <div class="chips">
-          <span class="chip">Automatic Control</span>
-          <span class="chip">Signal Processing</span>
-          <span class="chip">Artificial Intelligence</span>
-          <span class="chip">Computer Networks</span>
-          <span class="chip">Digital Control Systems</span>
-          <span class="chip">Finite Precision Analysis</span>
+          <span class="chip" data-zh="自動控制">Automatic Control</span>
+          <span class="chip" data-zh="訊號處理">Signal Processing</span>
+          <span class="chip" data-zh="人工智慧">Artificial Intelligence</span>
+          <span class="chip" data-zh="電腦網路">Computer Networks</span>
+          <span class="chip" data-zh="數位控制系統">Digital Control Systems</span>
+          <span class="chip" data-zh="有限精度分析">Finite Precision Analysis</span>
         </div>
 
         <div class="grid grid-3">
           <article class="card">
-            <h3>Control and Stability</h3>
-            <p>
+            <h3 data-zh="控制與穩定度">Control and Stability</h3>
+            <p data-zh="研究數位控制系統、有限字長效應，以及控制器實現與實作的穩定度分析。">
               Research on digital control systems, finite word length effects, and stability
               analysis for controller realization and implementation.
             </p>
           </article>
 
           <article class="card">
-            <h3>Signal Processing</h3>
-            <p>
+            <h3 data-zh="訊號處理">Signal Processing</h3>
+            <p data-zh="著重於數位濾波、心電圖（ECG）訊號處理、適應性濾波，以及高運算效率的系統合成。">
               Focus on digital filtering, ECG signal processing, adaptive filtering, and
               computationally efficient system synthesis.
             </p>
           </article>
 
           <article class="card">
-            <h3>AI and Networks</h3>
-            <p>
+            <h3 data-zh="人工智慧與網路">AI and Networks</h3>
+            <p data-zh="研究興趣亦延伸至人工智慧、循環神經網路（RNN）實作，以及電腦網路相關應用。">
               Interests also extend to artificial intelligence, recurrent neural network
               implementation, and computer network related applications.
             </p>
@@ -222,12 +229,12 @@
     <section class="section section-alt fade-in" id="publications">
       <div class="container">
         <div class="section-heading">
-          <p class="section-kicker">Publications</p>
-          <h2>Selected Publications</h2>
+          <p class="section-kicker" data-zh="著作">Publications</p>
+          <h2 data-zh="代表著作">Selected Publications</h2>
         </div>
 
         <div class="card">
-          <h3>Journal Articles</h3>
+          <h3 data-zh="期刊論文">Journal Articles</h3>
           <ol class="pub-list">
             <li>
               H.-J. Ko, W.-S. Yu, Y.-C. Wang, and J. J. P. Tsai,
@@ -265,7 +272,7 @@
         </div>
 
         <div class="card">
-          <h3>Conference Papers</h3>
+          <h3 data-zh="研討會論文">Conference Papers</h3>
           <ol class="pub-list">
             <li>
               Hsien-Ju Ko, Hao-Cheng Yang, Yuan-Bin Wang, and Han He,
@@ -284,8 +291,8 @@
               <em>American Control Conference</em>, 2004.
             </li>
           </ol>
-          <p class="muted small-note">
-            Publications are selected and condensed for web presentation from the uploaded CV. :contentReference[oaicite:2]{index=2}
+          <p class="muted small-note" data-zh="此處著作係自完整履歷精選整理，以利網頁呈現。">
+            Publications are selected and condensed from his full CV for web presentation.
           </p>
         </div>
       </div>
@@ -295,68 +302,68 @@
     <section class="section fade-in" id="projects">
       <div class="container">
         <div class="section-heading">
-          <p class="section-kicker">Projects</p>
-          <h2>Selected Grants and Projects</h2>
+          <p class="section-kicker" data-zh="研究計畫">Projects</p>
+          <h2 data-zh="代表計畫與補助">Selected Grants and Projects</h2>
         </div>
 
         <div class="grid grid-2">
           <article class="card">
             <div class="project-meta">2024–2025</div>
-            <h3>
+            <h3 data-zh="基於高強健性與平行架構狀態空間模型之深度神經網路架構">
               A Deep Neural Network Architecture Based on Highly Robust and Parallel Architecture
               State Space Model
             </h3>
-            <p>
+            <p data-zh="計畫主持人，國家科學及技術委員會。">
               Principal Investigator, National Science and Technology Council, Taiwan.
             </p>
-            <p class="muted">Approved amount: NT$800,000</p>
+            <p class="muted" data-zh="核定金額：新臺幣 800,000 元">Approved amount: NT$800,000</p>
           </article>
 
           <article class="card">
             <div class="project-meta">2023–2024</div>
-            <h3>Design and Implementation of a Novel Parallel Digital Filter Structure</h3>
-            <p>
+            <h3 data-zh="新型平行數位濾波器結構之設計與實作">Design and Implementation of a Novel Parallel Digital Filter Structure</h3>
+            <p data-zh="計畫主持人，國家科學及技術委員會。">
               Principal Investigator, National Science and Technology Council, Taiwan.
             </p>
-            <p class="muted">Approved amount: NT$450,000</p>
+            <p class="muted" data-zh="核定金額：新臺幣 450,000 元">Approved amount: NT$450,000</p>
           </article>
 
           <article class="card">
             <div class="project-meta">2022–2023</div>
-            <h3>Improved Decision Feedback Equalizer Design</h3>
-            <p>
+            <h3 data-zh="改良式決策回授等化器設計">Improved Decision Feedback Equalizer Design</h3>
+            <p data-zh="計畫主持人，國家科學及技術委員會。">
               Principal Investigator, National Science and Technology Council, Taiwan.
             </p>
-            <p class="muted">Approved amount: NT$497,000</p>
+            <p class="muted" data-zh="核定金額：新臺幣 497,000 元">Approved amount: NT$497,000</p>
           </article>
 
           <article class="card">
             <div class="project-meta">2021–2022</div>
-            <h3>
+            <h3 data-zh="改良式適應性 IIR 濾波器、二維濾波器與循環神經網路系統之設計與實作">
               Design and Implementation of Improved Adaptive IIR Filter, Two-Dimensional Filter,
               and Recurrent Neural Network System
             </h3>
-            <p>
+            <p data-zh="計畫主持人，國家科學及技術委員會。">
               Principal Investigator, National Science and Technology Council, Taiwan.
             </p>
-            <p class="muted">Approved amount: NT$514,000</p>
+            <p class="muted" data-zh="核定金額：新臺幣 514,000 元">Approved amount: NT$514,000</p>
           </article>
 
           <article class="card">
             <div class="project-meta">2025–2026</div>
-            <h3>
+            <h3 data-zh="生成式 AI、情境學習與運算思維於視窗程式設計教學之應用">
               Generative AI, Situated Learning, and Computational Thinking for Windows Programming Education
             </h3>
-            <p>
+            <p data-zh="計畫主持人，教育部教學實踐研究計畫。">
               Principal Investigator, Ministry of Education Teaching Practice Research Program.
             </p>
-            <p class="muted">Approved amount: NT$220,000</p>
+            <p class="muted" data-zh="核定金額：新臺幣 220,000 元">Approved amount: NT$220,000</p>
           </article>
 
           <article class="card">
-            <div class="project-meta">Earlier Projects</div>
-            <h3>Telemedicine, Power Quality, Smart Lighting, and IPv6 Applications</h3>
-            <p>
+            <div class="project-meta" data-zh="早期計畫">Earlier Projects</div>
+            <h3 data-zh="遠距醫療、電能品質、智慧照明與 IPv6 應用">Telemedicine, Power Quality, Smart Lighting, and IPv6 Applications</h3>
+            <p data-zh="研究經歷包含跨領域計畫，涵蓋生理訊號處理、電能品質監測、智慧照明、以 RFID 為基礎的校園安全，以及 U-healthcare（無所不在健康照護）相關系統。">
               Research experience includes interdisciplinary grants in physiological signal
               processing, power quality monitoring, smart lighting, RFID-based campus security,
               and U-healthcare related systems.
@@ -370,27 +377,27 @@
     <section class="section section-alt fade-in" id="awards">
       <div class="container">
         <div class="section-heading">
-          <p class="section-kicker">Awards</p>
-          <h2>Awards and Honors</h2>
+          <p class="section-kicker" data-zh="獲獎">Awards</p>
+          <h2 data-zh="獲獎與榮譽">Awards and Honors</h2>
         </div>
 
         <div class="grid grid-3">
           <article class="card center-card">
             <h3>2010</h3>
-            <p>Distinguished Teaching Award</p>
-            <p class="muted">Asia University, Taiwan</p>
+            <p data-zh="傑出教學獎">Distinguished Teaching Award</p>
+            <p class="muted" data-zh="亞洲大學">Asia University, Taiwan</p>
           </article>
 
           <article class="card center-card">
             <h3>2012</h3>
-            <p>Distinguished Teaching Award</p>
-            <p class="muted">Asia University, Taiwan</p>
+            <p data-zh="傑出教學獎">Distinguished Teaching Award</p>
+            <p class="muted" data-zh="亞洲大學">Asia University, Taiwan</p>
           </article>
 
           <article class="card center-card">
             <h3>2016</h3>
-            <p>Distinguished Teaching Award</p>
-            <p class="muted">Asia University, Taiwan</p>
+            <p data-zh="傑出教學獎">Distinguished Teaching Award</p>
+            <p class="muted" data-zh="亞洲大學">Asia University, Taiwan</p>
           </article>
         </div>
       </div>
@@ -400,27 +407,27 @@
     <section class="section fade-in" id="skills">
       <div class="container">
         <div class="section-heading">
-          <p class="section-kicker">Skills</p>
-          <h2>Relevant Skills</h2>
+          <p class="section-kicker" data-zh="專長">Skills</p>
+          <h2 data-zh="相關專長">Relevant Skills</h2>
         </div>
 
         <div class="grid grid-2">
           <article class="card">
-            <h3>Programming</h3>
+            <h3 data-zh="程式設計">Programming</h3>
             <ul class="clean-list">
               <li>C</li>
               <li>Java</li>
               <li>MATLAB</li>
-              <li>Assembly Language</li>
+              <li data-zh="組合語言">Assembly Language</li>
               <li>VHDL</li>
             </ul>
           </article>
 
           <article class="card">
-            <h3>Professional Certifications</h3>
+            <h3 data-zh="專業證照">Professional Certifications</h3>
             <ul class="clean-list">
-              <li>Cisco Certified Academy Instructor (CCAI)</li>
-              <li>Cisco Certified Network Associate (CCNA)</li>
+              <li data-zh="思科認證學院講師（CCAI）">Cisco Certified Academy Instructor (CCAI)</li>
+              <li data-zh="思科認證網路工程師（CCNA）">Cisco Certified Network Associate (CCNA)</li>
             </ul>
           </article>
         </div>
@@ -431,34 +438,34 @@
     <section class="section section-alt fade-in" id="contact">
       <div class="container">
         <div class="section-heading">
-          <p class="section-kicker">Contact</p>
-          <h2>Get in Touch</h2>
+          <p class="section-kicker" data-zh="聯絡">Contact</p>
+          <h2 data-zh="聯絡方式">Get in Touch</h2>
         </div>
 
         <div class="card contact-card">
           <div>
-            <h3>Academic Contact</h3>
-            <p>
+            <h3 data-zh="學術聯絡">Academic Contact</h3>
+            <p data-zh="若有學術合作、教學與研究交流需求，歡迎透過電子郵件聯繫。">
               For academic collaboration, teaching, and research discussion, please contact by email.
             </p>
           </div>
 
           <div class="contact-grid">
             <div>
-              <span class="mini-label">Name</span>
-              <p>Hsien-Ju Ko</p>
+              <span class="mini-label" data-zh="姓名">Name</span>
+              <p data-zh="柯賢儒">Hsien-Ju Ko</p>
             </div>
             <div>
-              <span class="mini-label">Affiliation</span>
-              <p>Department of Photonics and Communication Engineering, Asia University</p>
+              <span class="mini-label" data-zh="服務單位">Affiliation</span>
+              <p data-zh="亞洲大學 光電與通訊工程學系">Department of Photonics and Communication Engineering, Asia University</p>
             </div>
             <div>
-              <span class="mini-label">Email</span>
+              <span class="mini-label" data-zh="電子郵件">Email</span>
               <p><a href="mailto:hjko@asia.edu.tw">hjko@asia.edu.tw</a></p>
             </div>
             <div>
-              <span class="mini-label">Location</span>
-              <p>Taichung, Taiwan</p>
+              <span class="mini-label" data-zh="地點">Location</span>
+              <p data-zh="臺灣臺中">Taichung, Taiwan</p>
             </div>
           </div>
         </div>
@@ -468,8 +475,8 @@
 
   <footer class="site-footer">
     <div class="container footer-content">
-      <p>© 2026 Hsien-Ju Ko. All rights reserved.</p>
-      <a href="#top" class="back-top">Back to top</a>
+      <p data-zh="© 2026 柯賢儒，版權所有。">© 2026 Hsien-Ju Ko. All rights reserved.</p>
+      <a href="#top" class="back-top" data-zh="回到頂端">Back to top</a>
     </div>
   </footer>
 
